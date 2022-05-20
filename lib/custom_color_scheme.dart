@@ -43,26 +43,24 @@ class CustomColors extends ThemeExtension<CustomColors> {
     );
   }
 
-  // Controls how it displays when the instance is being passed
-  // to the `print()` method.
   @override
   String toString() => 'CustomColors('
       'success: $success, info: $info, warning: $info, danger: $danger'
       ')';
 
   // the light theme
-  static const light = CustomColors(
+  static const defaultColors = CustomColors(
     success: Color(0xff28a745),
-    info: Color(0xff17a2b8),
+    info: Color.fromARGB(255, 228, 100, 15),
     warning: Color(0xffffc107),
     danger: Color(0xffdc3545),
   );
 
   // the dark theme
-  static const dark = CustomColors(
+  static const darkColors = CustomColors(
     success: Color(0xff00bc8c),
     info: Color(0xff17a2b8),
-    warning: Color(0xfff39c12),
+    warning: Color.fromARGB(255, 146, 125, 91),
     danger: Color(0xffe74c3c),
   );
 }
